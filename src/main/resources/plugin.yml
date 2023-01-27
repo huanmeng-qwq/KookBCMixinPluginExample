@@ -1,5 +1,5 @@
-name: TestPlugin
+name: ExampleMixinPlugin
 version: 0.1.0
 api-version: 0.47.0
 authors: [ "huanmeng_qwq" ]
-main: me.huanmeng.jkook.plugin.TestPlugin
+main: me.huanmeng.jkook.plugin.ExampleMixinPlugin
