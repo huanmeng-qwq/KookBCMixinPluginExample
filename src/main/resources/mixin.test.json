@@ -1,0 +1,8 @@
+{
+  "package": "me.huanmeng.jkook.plugin.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.8",
+  "mixins": [
+    "TestMixin"
+  ]
+}
