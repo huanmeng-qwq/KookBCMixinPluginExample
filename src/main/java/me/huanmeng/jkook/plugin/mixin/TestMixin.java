@@ -16,7 +16,7 @@ import snw.kookbc.impl.command.CommandManagerImpl;
  */
 @Mixin(value = CommandManagerImpl.class, remap = false)
 public class TestMixin {
-    @Inject(method = "executeCommand", at = {@At("HEAD")}, remap = false)
+    @Inject(method = "executeCommand*", at = {@At("HEAD")}, remap = false)
     public void testInject(CommandSender sender, String command, CallbackInfoReturnable<Boolean> cir) {
         if (sender instanceof ConsoleCommandSender) {
             System.out.println("[Mixin] You entered the command: " + command);
