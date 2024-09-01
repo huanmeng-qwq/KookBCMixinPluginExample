@@ -25,7 +25,7 @@ public class KBClientMixin {
     @Final
     private CoreImpl core;
 
-    @Inject(method = "registerCommands", at = @At("HEAD"))
+    @Inject(method = "registerCommands", at = @At("HEAD"), remap = false)
     public void registerCommands(List<Class<?>> commands, CallbackInfo ci) {
         commands.removeIf(clazz -> Objects.equals(clazz, HelpCommand.class));
     }

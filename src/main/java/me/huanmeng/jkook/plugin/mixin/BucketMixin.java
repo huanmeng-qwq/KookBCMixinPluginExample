@@ -35,7 +35,7 @@ public class BucketMixin {
     @Final
     private String name;
 
-    @Inject(method = "check", at = @At("HEAD"))
+    @Inject(method = "check", at = @At("HEAD"), remap = false)
     public void exampleMixinPlugin$check(CallbackInfo ci) {
         int i = availableTimes.get();
         if (i == Integer.MIN_VALUE) {
